@@ -24,7 +24,7 @@ version: 2.1
 # ──────────────────────────────────────────────────────────────────────────────
 
 orbs:
-  docker: benefex/docker@volatile
+  docker: benifex/docker@volatile
 
 jobs:
   build-push:
