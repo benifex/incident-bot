@@ -98,7 +98,7 @@ jobs:
             spec:
               project: onehub-ops-ew3-p
               source:
-                repoURL: 'git@github.com:BenefexLtd/kubernetes-resources.git'
+                repoURL: 'git@github.com:benifex/kubernetes-resources.git'
                 path: gitops/${ENV}/charts/${APP_NAME}
                 targetRevision: HEAD
                 helm:
