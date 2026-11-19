@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: incident-bot
+  description: Slack ChatOps bot for declaring, managing and reviewing technical incidents.
+  tags:
+    - language:python
+    - iac:helm
+    - ci:circleci
+  annotations:
+    # TODO: no SonarQube project found for this repo - add sonarqube.org/project-key when one exists
+    argocd/app-selector: backstage-group=incident-bot
+    argocd/instance-name: benifex
+    github.com/project-slug: benifex/incident-bot
+    circleci.com/project-slug: github/benifex/incident-bot
+    wiz.io/repository-external-id: github.com##benifex/incident-bot
+spec:
+  type: service
+  lifecycle: production
+  owner: group:benifex/unknown-ownership
